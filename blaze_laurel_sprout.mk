@@ -19,14 +19,12 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 
-# Inherit some common CherishOs stuff
-$(call inherit-product, vendor/cherish/config/common_full_phone.mk)
+# Inherit some common ProjectBlazeOs stuff
+$(call inherit-product, vendor/blaze/config/common_full_phone.mk)
 
-# Cherish Official
-CHERISH_BUILD_TYPE := OFFICIAL
-PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
-    ro.cherish.maintainer=RAYAN(BASUBHAJANTRI)
-
+# Blaze Official Stuff
+BLAZE_BUILD_TYPE := OFFICIAL
+BLAZE_MAINTAINER := RAYAN(BASUBHAJANTRI)
 
 # FaceUnlock
 TARGET_FACE_UNLOCK_SUPPORTED := true
@@ -48,7 +46,7 @@ $(call inherit-product, $(LOCAL_PATH)/laurel_sprout.mk)
 PRODUCT_BRAND := Xiaomi
 PRODUCT_DEVICE := laurel_sprout
 PRODUCT_MANUFACTURER := Xiaomi
-PRODUCT_NAME := cherish_laurel_sprout
+PRODUCT_NAME := blaze_laurel_sprout
 PRODUCT_MODEL := Mi A3
 
 
@@ -63,7 +61,7 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
  PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
 # Gapps Build
-WITH_GMS := true
+WITH_GAPPS := true
 
 # Quick Tap
 TARGET_SUPPORTS_QUICK_TAP := true
