@@ -121,6 +121,10 @@ PRODUCT_PACKAGES += \
     libdng_sdk.vendor \
     GCamGo
 
+# Call recording
+PRODUCT_PACKAGES += \
+    com.google.android.apps.dialer.call_recording_audio.features.xml
+
 # Charger
 PRODUCT_PACKAGES += \
     libsuspend
