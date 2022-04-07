@@ -67,3 +67,5 @@ WITH_GMS := true
 
 # Quick Tap
 TARGET_SUPPORTS_QUICK_TAP := true
+
+TARGET_SUPPORTS_NOW_PLAYING ?= true
